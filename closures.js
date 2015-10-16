@@ -11,9 +11,13 @@ var outer = function(){
 
   //Code Here
 
+  var inner = outer();
+
 //Once you do that, invoke inner.
 
   //Code Here
+
+  inner();
 
 
 
@@ -33,8 +37,8 @@ var callFriend = function(){
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
 
   //Code Here
-
-
+var fullSentence = callFriend();
+fullSentence('435-215-9248');
 
 //Next Problem
 
@@ -45,6 +49,7 @@ var callFriend = function(){
 */
 
   //Code Here
+
   var count = makeCounter();
   count() // 1
   count() // 2
