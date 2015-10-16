@@ -25,7 +25,7 @@ var name = 'Tyler';
 
   //Code Here
   function getName() {
-  	var name = prompt(What is your name?);
+  	var name = prompt('What is your name?');
   	return name;
   }
 
@@ -64,6 +64,7 @@ var name = 'Tyler';
 
 
   //Answer Here
+  false
   NaN
   Null
   Undefined
@@ -101,7 +102,7 @@ alert(newMyName);
 
   //Code Here
   function outerFn() {
-  	return function() {
+  	return function () {
   		return "Erin Sheridan";
   	}
 
@@ -110,8 +111,8 @@ alert(newMyName);
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-  var innerFN = outerFn();
+  var innerFn = outerFn();
 
 //Now invoke innerFn.
 
-innerFn[outerFn];
+innerFn();
