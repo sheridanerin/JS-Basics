@@ -94,6 +94,9 @@ function secondFunction(fun) {
   }
 }
 
+var doIt = secondFunction(firstFunction);
+doIt();
+
 //Next Problem
 
 
@@ -105,12 +108,19 @@ function secondFunction(fun) {
   to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
 */
 
+function whatev() {
+  console.log('hello');
+}
+
 function fnCounter(fun, N) {
   for (var i = 0; i < N; i++) {
     fun();
   }
   return 'stop';
 }
+
+fnCounter(whatev, 5);
+
 
 
 
@@ -163,7 +173,14 @@ function fnCounter(fun, N) {
 
 //Next Problem
 
-
+var funcArray = [
+      function() { console.log(0) }
+    , function() { console.log(1) }
+    , function() { console.log(2) }
+    , function() { console.log(3) }
+    , function() { console.log(4) }
+    , function() { console.log(5) }
+]
 
 /*
   Make the following code work
